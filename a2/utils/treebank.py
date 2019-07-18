@@ -27,7 +27,7 @@ class StanfordSentiment:
         for sentence in self.sentences():
             for w in sentence:
                 wordcount += 1
-                if not w in tokens:
+                if  w not in tokens:
                     tokens[w] = idx
                     revtokens += [w]
                     tokenfreq[w] = 1
